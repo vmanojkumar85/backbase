@@ -5,5 +5,5 @@ Scenario: Create an Article
 	Given Launch the application and login 
 	When sign in as a new user
 	And validate user creation
-	Then create a new user Article "QA-Article13"
-	And verify article by name "QA-Article13"
+	Then create a new user Article "QA-Article14"
+	And verify article by name "QA-Article14"

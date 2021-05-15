@@ -32,8 +32,8 @@ public class CreateStepDef extends PageObject{
 	public void create_the_article() {
 		usersteps.signInClick("Sign in");
 		usersteps.createNewAccount("NeedAnAccount");
-		signInPage.enterText("Username", "manoj028");
-		signInPage.enterText("Email", "manoj028@mail.com");
+		signInPage.enterText("Username", "manoj029");
+		signInPage.enterText("Email", "manoj029@mail.com");
 		signInPage.enterText("Password", "qabypass");
 		usersteps.userSignIn("Submit");
 	}
@@ -48,9 +48,9 @@ public class CreateStepDef extends PageObject{
 	public void createNewUserArticle(String articleName) {
 		usersteps.newPost("New Post");
 		newPost.enterText("Article Title", articleName);
-		newPost.enterText("Article About", "QA-Automation12");
+		newPost.enterText("Article About", "QA-Automation14");
 		newPost.enterText("Article Body", "QA-Automation testing with serenity");
-		newPost.enterText("Article Tags", "QATag12");
+		newPost.enterText("Article Tags", "QATag14");
 		usersteps.publishArticle("Publish Article");
 	}
 	
