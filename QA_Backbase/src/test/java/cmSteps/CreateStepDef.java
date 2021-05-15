@@ -32,8 +32,8 @@ public class CreateStepDef extends PageObject{
 	public void create_the_article() {
 		usersteps.signInClick("Sign in");
 		usersteps.createNewAccount("NeedAnAccount");
-		signInPage.enterText("Username", "manoj027");
-		signInPage.enterText("Email", "manoj027@mail.com");
+		signInPage.enterText("Username", "manoj028");
+		signInPage.enterText("Email", "manoj028@mail.com");
 		signInPage.enterText("Password", "qabypass");
 		usersteps.userSignIn("Submit");
 	}
