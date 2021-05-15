@@ -17,7 +17,7 @@ public class NewPost extends PageObject {
 	pageMap.put("Article About", "input[placeholder*='article about']");//css selector
 	pageMap.put("Article Body", "textarea[placeholder*='Write your article']");//css selector
 	pageMap.put("Article Tags", "input[placeholder='Enter Tags']");//css selector
-	pageMap.put("Publish Article", "button.btn");//css selector
+	pageMap.put("Publish Article", "button[type='button']");//css selector
 	}
 	
 	public void click(String key) {
