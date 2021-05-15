@@ -32,8 +32,8 @@ public class CreateStepDef extends PageObject{
 	public void create_the_article() {
 		usersteps.signInClick("Sign in");
 		usersteps.createNewAccount("NeedAnAccount");
-		signInPage.enterText("Username", "manoj026");
-		signInPage.enterText("Email", "manoj026@mail.com");
+		signInPage.enterText("Username", "manoj027");
+		signInPage.enterText("Email", "manoj027@mail.com");
 		signInPage.enterText("Password", "qabypass");
 		usersteps.userSignIn("Submit");
 	}
@@ -48,9 +48,9 @@ public class CreateStepDef extends PageObject{
 	public void createNewUserArticle(String articleName) {
 		usersteps.newPost("New Post");
 		newPost.enterText("Article Title", articleName);
-		newPost.enterText("Article About", "QA-Automation11");
+		newPost.enterText("Article About", "QA-Automation12");
 		newPost.enterText("Article Body", "QA-Automation testing with serenity");
-		newPost.enterText("Article Tags", "QATag11");
+		newPost.enterText("Article Tags", "QATag12");
 		usersteps.publishArticle("Publish Article");
 	}
 	
@@ -59,8 +59,7 @@ public class CreateStepDef extends PageObject{
 	public void articleVerification(String article) throws InterruptedException {
 		String articleName=usersteps.getArticleName();
 		System.out.println("Name of the article->"+articleName);
-		//Assert.assertEquals("Article page loaded", "BBlog",getDriver().getTitle());
-		//Assert.assertEquals("Article Validation Successfull", article,articleName);
+		Assert.assertEquals("Article Validation Successfull", article,articleName);
 	}
 	
 	
