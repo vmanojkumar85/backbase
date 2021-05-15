@@ -13,7 +13,7 @@ public class Article extends PageObject {
 	static
 	{
 	pageMap =new HashMap<String, String>();
-	pageMap.put("Article Name", "/html/body/app-root/app-article/div/div[1]/div/h1");
+	pageMap.put("Article Name", "//h1");
 	}
 	
 	public String getHeader() {
